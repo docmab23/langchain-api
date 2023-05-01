@@ -9,7 +9,7 @@ from langchain.chains.question_answering import load_qa_chain
 from langchain.llms import OpenAI
 import os 
 
-API_KEY = os.getenv('API_KEY')
+API_KEY = os.environ.get('API_KEY')
 
 app = Flask(__name__)
 
